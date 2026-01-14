@@ -27,6 +27,3 @@ Domain Names: Purchase domains that look similar to the client's (e.g., client-s
 Hardware Requirements
 Consultant Laptop: Minimum 16GB RAM for running local testing environments.
 Server: A standard VPS with 2 vCPUs and 4GB RAM is usually sufficient for handling campaigns of up to 5,000 users.
-
-4. Key Metrics for the Report
-Your customer will want to see these data points: | Metric | Description | | :--- | :--- | | Open Rate | Percentage of users who opened the email. | | Click Rate | Percentage of users who clicked the "malicious" link. | | Credential Capture | Number of users who submitted data into the fake landing page. | | Reporting Rate | Most Important: How many users used the "Report Phishing" button instead of clicking? |
