@@ -1,0 +1,35 @@
+1. Installation on Linux (Step-by-Step)
+Step 1: Download & Extract
+Connect to your Linux server via SSH and run the following:
+Bash
+# Update the system
+sudo apt update && sudo apt upgrade -y
+
+# Install unzip
+sudo apt install unzip -y
+
+# Create a folder for Gophish
+mkdir gophish && cd gophish
+
+# Download the latest Linux 64-bit binary (check GitHub for the newest version)
+wget https://github.com/gophish/gophish/releases/download/v0.12.1/gophish-v0.12.1-linux-64bit.zip
+
+# Extract the files
+unzip gophish-v0.12.1-linux-64bit.zip
+
+# Make the file executable
+chmod +x gophish
+
+Step 2: Configure for Remote Access
+By default, Gophish only allows you to access the admin panel from localhost. To access it from your own laptop, you need to edit the config file:
+Bash
+nano config.json
+
+Find the admin_server section and change 127.0.0.1:3333 to 0.0.0.0:3333.
+Security Note: Once you do this, your admin panel is public. Ensure your VPS firewall (UFW) only allows your specific IP address to connect to port 3333.
+Step 3: Launch
+Start Gophish for the first time:
+Bash
+sudo ./gophish
+
+Important: Look at the terminal output. It will print a temporary admin password. Copy this immediately.
