@@ -1,0 +1,42 @@
+Phishing Simulation: Rules of Engagement (ROE)
+1. Parties Involved
+Service Provider: [Your Name/Company Name]
+Customer: [Client Company Name]
+Primary Point of Contact (POC): [Name, Title, Phone, Email]
+Emergency POC: [Name, Title, Phone, Email] (to be contacted if the simulation causes a system outage or is detected by a non-informed security team)
+2. Project Scope & Schedule
+Engagement Start Date: [YYYY-MM-DD]
+Engagement End Date: [YYYY-MM-DD]
+Target Population: [e.g., All employees / specific departments like Finance and HR]
+Total Number of Targets: [Count]
+3. Authorized Testing Methods
+The Service Provider is authorized to perform the following:
+Email Phishing: Sending simulated malicious emails to targets.
+Landing Page Hosting: Hosting fake login portals to capture (but not store) credentials.
+Data Capture: Logging clicks, browser versions, and timestamp data.
+[Optional] Attachment Testing: Sending safe macro-enabled documents or tracking PDFs.
+4. Restrictions & Out-of-Scope
+To minimize business disruption, the following are strictly prohibited:
+No password spraying or brute-force attacks on live accounts.
+No use of "fear-based" lures (e.g., personal health info, termination notices) without prior HR approval.
+No collection of actual passwords. (Passwords should be masked or only the "attempt" should be logged).
+No disruption of critical business services or customer-facing applications.
+5. Whitelisting & Technical Coordination
+The Customer agrees to whitelist the following to ensure the simulation reaches user inboxes:
+Sending IP Addresses: [List IPs]
+Sending Domains: [List Domains]
+Email Headers: [e.g., X-PHISH-TEST: [ID_Number]]
+6. Data Handling & Privacy
+Storage: All data collected (clicks, emails) will be encrypted and stored securely.
+Destruction: All captured data and logs will be permanently deleted [Number] days after the final report is delivered.
+Sensitive Data: No PII (Personally Identifiable Information) beyond names and work emails will be extracted or stored.
+7. Communication Plan (The "Emergency Stop")
+In the event of an unforeseen issue (e.g., the company help desk is overwhelmed by calls), the Customer POC may issue a "Cease and Desist" order via phone or email. The Service Provider must stop all activity immediately.
+
+Signatures
+For Service Provider: __________________________ Date: __________
+For Customer: __________________________ Date: __________
+
+Tips for Implementation:
+The "Double Check": Ensure the person signing this has the legal authority to authorize a security test (usually a CISO, CTO, or CEO).
+Help Desk Notification: Decide whether the Help Desk should know about this. Usually, it's best to tell the Help Desk Manager so they don't get spooked, but tell them to keep it quiet from the Tier 1 staff to test their response too.
